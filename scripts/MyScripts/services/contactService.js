@@ -91,11 +91,10 @@
             url: "./scripts/MyScripts/data.php",
             method: 'POST',
             //processData: false,
-            data: JSON.stringify(data),
+            data: data,//JSON.stringify(data),
             //transformRequest: angular.identity,
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-				'Access-Control-Allow-Origin': '*'
+				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
             }
         })
             .success(function (result) {
