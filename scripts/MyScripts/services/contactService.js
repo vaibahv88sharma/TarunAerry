@@ -22,7 +22,7 @@
         }
         else {
             return $resource(
-                "/scripts/MyScripts/data.php",
+                "./scripts/MyScripts/data.php",
                 {},
                 {
                     query: {

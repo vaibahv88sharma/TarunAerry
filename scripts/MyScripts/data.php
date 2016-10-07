@@ -1,5 +1,5 @@
 <?php
-$to = 'InsertYourEmailAddress';
+$to = 'vaibhav88sharma@gmail.com';
 $subject = "Beautiful HTML Email using PHP by CodexWorld";
 // Get HTML contents from file
 
@@ -21,8 +21,8 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // Additional headers
-$headers .= 'From: CodexWorld<info@codexworld.com>' . "\r\n";
-$headers .= 'Cc: codexworld@gmail.com' . "\r\n";
+$headers .= 'From: vaibhav88sharma@gmail.com' . "\r\n";
+$headers .= 'Cc: vaibhav88sharma@gmail.com' . "\r\n";
 
 // Send email
 if(mail($to,$subject,$htmlContent,$headers)):
