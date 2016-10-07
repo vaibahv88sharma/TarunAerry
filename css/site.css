@@ -142,7 +142,7 @@ footer {
   padding : 5px 15px;
 }
 #exTab3 .tab-pane >div > div > a {
-  background:url(/img/background1.jpg);
+  background:url(./img/background1.jpg);
   border:none;
 }
 #exTab3 .tab-pane >div > div > a > img{
