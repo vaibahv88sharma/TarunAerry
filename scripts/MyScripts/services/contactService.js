@@ -88,7 +88,7 @@
 										
         var deferred = $q.defer();
         $http({
-            url: "/scripts/MyScripts/data.php",
+            url: "//scripts/MyScripts/data.php",
             method: 'POST',
             //processData: false,
             data: JSON.stringify(data),
