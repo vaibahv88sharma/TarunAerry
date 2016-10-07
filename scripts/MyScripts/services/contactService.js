@@ -94,7 +94,9 @@
             data: data,//JSON.stringify(data),
             //transformRequest: angular.identity,
             headers: {
-				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+				//'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+				'Content-Type': 'application/json', 
+				'Accept': 'application/json'				
             }
         })
             .success(function (result) {
