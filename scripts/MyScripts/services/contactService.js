@@ -96,7 +96,10 @@
             headers: {
 				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
 				//'Content-Type': 'application/json', 
-				'Accept': 'application/json'				
+				//'Accept': 'application/json'				
+				'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
+				'Access-Control-Allow-Origin': '*',
+				'Access-Control-Allow-Headers': 'Content-Type'
             }
         })
             .success(function (result) {
