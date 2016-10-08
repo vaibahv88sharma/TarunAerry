@@ -9,6 +9,7 @@
 	header('Access-Control-Allow-Headers: Content-Type');
 	echo "invalid";
 	$postdata = file_get_contents("php://input");
+	$htmlContent = json_decode($postdata);
 	
     // Allow from any origin
     //if (isset($_SERVER['HTTP_ORIGIN'])) {
