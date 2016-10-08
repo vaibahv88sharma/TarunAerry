@@ -9,7 +9,35 @@
     header("Access-Control-Allow-Headers: Content-Type");
     header('Access-Control-Max-Age: 86400');
 	echo "invalid";
-	$postdata = file_get_contents("php://input");
+	
+    $postData       = isset($_REQUEST)  ? $_REQUEST                 : null; 
+    $jsonEncoded    = ($postData)       ? json_encode($postData)    : null;
+    $response       = array();
+    $callback       = null;
+
+    if ($jsonEncoded) {
+        $htmlContent    = json_decode($jsonEncoded);
+        $fName          = htmlspecialchars(trim($htmlContent->fName));
+        $lName          = htmlspecialchars(trim($htmlContent->lName));
+        $email          = htmlspecialchars(trim($htmlContent->email));
+        $phone          = htmlspecialchars(trim($htmlContent->phone));
+        $callback       = htmlspecialchars(trim($htmlContent->callback));
+
+        if ($fName != "") {
+            $response['message']    = "Server returns: " . $fName;
+        }else {
+            $response['message']    = "Empty username parameter!";
+        }
+    }else {
+        $response['message']        = "Not called properly with username parameter!";
+    }
+
+    if($callback) {
+        die($callback . "(" . json_encode($response) . ")");
+    }else{
+        die(json_encode($response));
+    }	
+	
 	//$htmlContent = json_decode($postdata);
 	
     // Allow from any origin
@@ -32,7 +60,6 @@
     //    exit(0);
     //}
 
-	 echo "You have CORS!";
 	
 //	$to = 'vaibhav88sharma@gmail.com';
 //	$subject = "Beautiful HTML Email using PHP by CodexWorld";
