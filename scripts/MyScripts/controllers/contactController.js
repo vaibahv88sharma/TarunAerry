@@ -14,11 +14,13 @@
 		//JsonSerializer serializer = new JsonSerializer();
                 $.ajax({
                     url         : "https://vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",//"./scripts/MyScripts/data.php",
-                    dataType    : "text",
+                    dataType    : "jsonp",
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
                     data        : JSON.stringify(contact),//contact.serialize(),
+                    processData : false,
+                    contentType : 'application/json',
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
