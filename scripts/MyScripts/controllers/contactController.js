@@ -9,12 +9,12 @@
 
     $scope.submitForm = function (contact) {
                 $.ajax({
-                    url         : "https://**.github.io/***/data.php",
+                    url         : "./scripts/MyScripts/data.php",
                     dataType    : "jsonp",
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
-                    data        : contact.serialize(),
+                    data        : JSON.stringify(contact),
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
