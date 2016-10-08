@@ -13,9 +13,9 @@
 	//$scope.submitForm = function (contact) {
 		//JsonSerializer serializer = new JsonSerializer();
                 $.ajax({
-                    url         : "https://vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",//"./scripts/MyScripts/data.php",
+                    url         : "//vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",//"./scripts/MyScripts/data.php",
                     dataType    : "jsonp",
-                    //crossDomain : true,
+                    crossDomain : true,
                     cache       : false,
                     type        : "POST",
                     data: JSON.stringify(contact),//contact.serialize(),
