@@ -95,10 +95,10 @@
             //transformRequest: angular.identity,
             headers: {
 				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-				//'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+				//'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
 				//'Content-Type': 'application/json', 
 				//'Accept': 'application/json'				
-				'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
+				'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 				'Access-Control-Allow-Origin': '*',
 				'Access-Control-Allow-Headers': 'X-Requested-With'
             }

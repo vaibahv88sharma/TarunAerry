@@ -2,6 +2,7 @@
 
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Headers: X-Requested-With');
 
 $to = 'vaibhav88sharma@gmail.com';
 $subject = "Beautiful HTML Email using PHP by CodexWorld";
