@@ -18,7 +18,7 @@
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
-                    data        : contact,//JSON.stringify(contact),//contact.serialize(),
+                    data        : JSON.stringify(contact),//contact.serialize(),
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
