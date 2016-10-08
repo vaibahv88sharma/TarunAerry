@@ -18,9 +18,10 @@
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
-                    data        : JSON.stringify(contact),//contact.serialize(),
+                    data: JSON.stringify(contact),//contact.serialize(),
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
                     processData : false,
-                    contentType : 'application/json',
+                    //contentType : 'application/json',
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
