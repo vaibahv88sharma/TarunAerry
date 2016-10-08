@@ -7,6 +7,8 @@
 	header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 	header('Access-Control-Allow-Origin: *');
 	header('Access-Control-Allow-Headers: Content-Type');
+	echo "invalid";
+	$postdata = file_get_contents("php://input");
 	
     // Allow from any origin
     //if (isset($_SERVER['HTTP_ORIGIN'])) {
