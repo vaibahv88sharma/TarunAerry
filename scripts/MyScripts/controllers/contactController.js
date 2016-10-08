@@ -14,7 +14,7 @@
 		//JsonSerializer serializer = new JsonSerializer();
                 $.ajax({
                     url         : "https://vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",//"./scripts/MyScripts/data.php",
-                    dataType    : "jsonp",
+                    dataType    : "json",
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
