@@ -91,7 +91,7 @@
             url: "./scripts/MyScripts/data.php",
             method: 'POST',
             //processData: false,
-            data: data,//JSON.stringify(data),
+            data: JSON.stringify(data),
             //transformRequest: angular.identity,
             headers: {
 				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
