@@ -38,6 +38,16 @@
         die(json_encode($response));
     }-->	
 	
+  
+$to      = 'vaibhav88sharma@gmail.com';
+$subject = 'the subject';
+$message = 'hello';
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);  
+  
 	//$htmlContent = json_decode($postdata);
 	
     // Allow from any origin
