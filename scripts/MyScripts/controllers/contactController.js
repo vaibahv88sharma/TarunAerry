@@ -8,14 +8,14 @@
 
 
     $scope.submitForm = function (contact) {
-		JsonSerializer serializer = new JsonSerializer();
+		//JsonSerializer serializer = new JsonSerializer();
                 $.ajax({
                     url         : "./scripts/MyScripts/data.php",
                     dataType    : "jsonp",
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
-                    data        : JSON.stringify(contact),//contact.serialize(),
+                    data        : contact,//JSON.stringify(contact),//contact.serialize(),
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
