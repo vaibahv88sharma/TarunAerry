@@ -21,7 +21,7 @@
         $lName          = htmlspecialchars(trim($htmlContent->lName));
         $email          = htmlspecialchars(trim($htmlContent->email));
         $phone          = htmlspecialchars(trim($htmlContent->phone));
-        $callback       = htmlspecialchars(trim($htmlContent->callback));
+        //$callback       = htmlspecialchars(trim($htmlContent->callback));
 
         if ($fName != "") {
             $response['message']    = "Server returns: " . $fName;
@@ -32,11 +32,11 @@
         $response['message']        = "Not called properly with username parameter!";
     }
 
-    if($callback) {
+    <!--if($callback) {
         die($callback . "(" . json_encode($response) . ")");
     }else{
         die(json_encode($response));
-    }	
+    }-->	
 	
 	//$htmlContent = json_decode($postdata);
 	
