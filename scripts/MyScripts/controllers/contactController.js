@@ -6,8 +6,11 @@
     //});
     $scope.map = { center: { latitude: -37.790437, longitude: 144.862211 }, zoom: 8 };
 
+	$scope.contact={};
+	
 
-    $scope.submitForm = function (contact) {
+    $scope.submitForm = function ($scope.contact) {
+	//$scope.submitForm = function (contact) {
 		//JsonSerializer serializer = new JsonSerializer();
                 $.ajax({
                     url         : "./scripts/MyScripts/data.php",
@@ -15,7 +18,7 @@
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
-                    data        : contact,//JSON.stringify(contact),//contact.serialize(),
+                    data        : $scope.contact,//JSON.stringify(contact),//contact.serialize(),
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
