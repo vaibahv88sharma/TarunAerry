@@ -10,7 +10,7 @@
     header('Access-Control-Max-Age: 86400');
 	echo "invalid";
 	$postdata = file_get_contents("php://input");
-	$htmlContent = json_decode($postdata);
+	//$htmlContent = json_decode($postdata);
 	
     // Allow from any origin
     //if (isset($_SERVER['HTTP_ORIGIN'])) {
