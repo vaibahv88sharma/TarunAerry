@@ -9,7 +9,7 @@
 	$scope.contact={};
 	
 
-    $scope.submitForm = function ($scope.contact) {
+    $scope.submitForm = function (contact) {
 	//$scope.submitForm = function (contact) {
 		//JsonSerializer serializer = new JsonSerializer();
                 $.ajax({
@@ -18,7 +18,7 @@
                     crossDomain : true,
                     cache       : false,
                     type        : "POST",
-                    data        : $scope.contact,//JSON.stringify(contact),//contact.serialize(),
+                    data        : contact,//JSON.stringify(contact),//contact.serialize(),
                     success: function (data, textStatus, jqXHR){
                         if(data){
                             console.log(data.message);
