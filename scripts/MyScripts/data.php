@@ -1,6 +1,6 @@
 <?php
- $postdata = file_get_contents("php://input");
- $htmlContent = json_decode($postdata);
+ //$postdata = file_get_contents("php://input");
+ //$htmlContent = json_decode($postdata);
 ////header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 ////header("Access-Control-Allow-Origin: *");
 ////header('Access-Control-Allow-Headers: X-Requested-With');
