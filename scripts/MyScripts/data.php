@@ -4,9 +4,9 @@
     //<add name="Access-Control-Allow-Headers" value="Content-Type" />
     //<add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" />
 	
-	header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-	header('Access-Control-Allow-Origin: *');
-	header('Access-Control-Allow-Headers: Content-Type');
+	header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Headers: Content-Type");
 	echo "invalid";
 	$postdata = file_get_contents("php://input");
 	$htmlContent = json_decode($postdata);
