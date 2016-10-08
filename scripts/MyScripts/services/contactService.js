@@ -88,19 +88,22 @@
 										
         var deferred = $q.defer();
         $http({
-            //url: "./scripts/MyScripts/data.php",
-			url: "https://vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",
+            url: "./scripts/MyScripts/data.php",
+			//url: "https://vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",
             method: 'POST',
             //processData: false,
             data: JSON.stringify(data),
+            dataType    : "jsonp",
+            crossDomain : true,
+            cache       : false,			
             //transformRequest: angular.identity,
-            headers: {
-				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            //headers: {
+				//'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
 				//'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',			
 				//'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 				//'Access-Control-Allow-Origin': '*',
 				//'Access-Control-Allow-Headers': 'X-Requested-With'
-            }
+            //}
         })
             .success(function (result) {
                 deferred.resolve(result);
