@@ -4,7 +4,7 @@
     function getAllTaxrResource(id) {
         if (id) {
             return $resource(
-                "/scripts/MyScripts/sourceTaxation.json",
+                "./scripts/MyScripts/sourceTaxation.json",
                 { id: id },
                 {
                     query: {
@@ -15,7 +15,7 @@
         }
         else {
             return $resource(
-                "/scripts/MyScripts/sourceTaxation.json",
+                "./scripts/MyScripts/sourceTaxation.json",
                 {},
                 {
                     query: {
