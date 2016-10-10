@@ -1,10 +1,17 @@
 body {
     background-color:#D7D5C3;
-    background:url(/TarunAerry/img/background1.jpg);
+    background:url(/img/background1.jpg);
     background-attachment:fixed;
     background-size: cover;
 }
-
+hr {
+    color: #080808;
+    background-color: #080808;
+    height: 2px;
+}
+blockquote > p {
+    font-family: Tahoma, Geneva, sans-serif;
+}
 /*.navbar {
   /*margin-bottom: 20px;
   background-color: #178acc;
@@ -130,9 +137,14 @@ li.dropdown:hover > .dropdown-menu {
 footer {
     background-color:#178acc;
     margin-top: 2em;
+    margin-bottom: 0em;
     padding: 1em;
+    /*position: relative;*/
+    color:white;  
     position: relative;
-    color:white;    
+    bottom: 0;
+    left: 0;
+    right: 0;     
 }
 
 /*Home thumbnails Directive*/
@@ -142,7 +154,7 @@ footer {
   padding : 5px 15px;
 }
 #exTab3 .tab-pane >div > div > a {
-  background:url(/TarunAerry/img/background1.jpg);
+  background:url(/img/background1.jpg);
   border:none;
 }
 #exTab3 .tab-pane >div > div > a > img{
@@ -215,4 +227,47 @@ table  table {
     margin:-45px 0 0 30px; 
     background:#fff; 
     width: 9.5em;
+}
+
+/*Taxation View*/
+/*.taxation  {
+   border-top: 4px solid;
+   padding : 0px 5px;
+}
+.heading  {
+    border: thick  black;
+    width: 19.5em;
+    background:#fff;
+    margin:-45px 0 0 -10px; 
+    background-color: white;
+}*/
+
+    .taxation  {
+        margin-top: 2em;
+    }
+
+@media only screen and (min-width: 438px) {
+    .taxation  {
+        border-top: 10px solid #a3a39e;
+        position: relative;
+    }
+    .taxation:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10em;
+        top: -10px;
+        right: 0px;
+        border: 10px solid white;
+    }
+    .heading {
+            margin:-3.1em 0 0 -1.1em;
+            background-color: white;
+            width: 18em;
+    }
+}
+
+.parra {
+    padding-left : 3em;
+    padding-right : 3em;
 }
