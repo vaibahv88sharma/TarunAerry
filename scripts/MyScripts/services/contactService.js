@@ -81,7 +81,46 @@
             });
         return deferred.promise;
     }
+    
+    function postEmailContactHttp(contact) {
 
+        var deferred = $q.defer();
+        $http({
+            //////////url: "//formspree.io/vic.sharma.it@email.com",
+            ////////////url: "https://vaibahv88sharma.github.io/TarunAerry/scripts/MyScripts/data.php",
+            //////////method: 'POST',
+            ////////////processData: false,
+            //////////data: data,//JSON.stringify(data),
+            ////////////data : data.serialize(),
+            ////////////dataType: "jsonp",
+            ////////////crossDomain: true,
+            ////////////cache: false,
+            ////////////transformRequest: angular.identity,
+            //////////headers: {
+            //////////'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            //////////'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',			
+            //////////'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+            //////////'Access-Control-Allow-Origin': '*',
+            //////////'Access-Control-Allow-Headers': 'X-Requested-With'
+            //////////}
+            url: "//formspree.io/vic.sharma.it@email.com",
+            method: "POST",
+            //processData: false,
+            data: data,//JSON.stringify(data),
+            //transformRequest: angular.identity,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "content-type": "application/json;odata=verbose"
+            }
+        })
+            .success(function (result) {
+                deferred.resolve(result);
+            })
+            .error(function (result, status) {
+                deferred.reject(status);
+            });
+        return deferred.promise;
+    }
 /* HTTP */
 
     var postNewContactHttp = function (data) {
@@ -121,6 +160,7 @@
         getAllResource: getAllResource,
         getSelContactResource: getSelContactResource,
         postNewContactResource: postNewContactResource,
-        postNewContactHttp : postNewContactHttp
+        postNewContactHttp: postNewContactHttp,
+        postEmailContactHttp: postEmailContactHttp
     };
 }]);
