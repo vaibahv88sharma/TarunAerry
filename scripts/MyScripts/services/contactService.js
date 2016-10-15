@@ -103,7 +103,7 @@
             //////////'Access-Control-Allow-Origin': '*',
             //////////'Access-Control-Allow-Headers': 'X-Requested-With'
             //////////}
-            url: "//formspree.io/vic.sharma.it@email.com",
+            url: "//formspree.io/vic.sharma.it@gmail.com",
             method: "POST",
             //processData: false,
             data: data,//JSON.stringify(data),
