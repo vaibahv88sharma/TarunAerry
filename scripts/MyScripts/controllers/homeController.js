@@ -10,7 +10,7 @@ angular.module('homeModule').controller('homeController', function ($scope, $rou
 	$scope.submitForm = function (contact) {
 	    if ($scope.ContactForm.$valid) {
 
-	        contactService.postEmailContactHttp(contact)
+	        homeService.postEmailContactHttp(contact)
                 .then(function (data) {
                     //$scope.isSubmitting = false;
                     //$location.path("/notes");
