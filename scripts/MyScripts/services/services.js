@@ -68,7 +68,7 @@
         $http({
             url: "//formspree.io/vic.sharma.it@gmail.com",
             method: "POST",
-            data: data,
+            data: contact,
             headers: {
                 "accept": "application/json;odata=verbose",
                 "content-type": "application/json;odata=verbose"

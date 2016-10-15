@@ -106,7 +106,7 @@
             url: "//formspree.io/vic.sharma.it@gmail.com",
             method: "POST",
             //processData: false,
-            data: data,//JSON.stringify(data),
+            data: contact,//JSON.stringify(data),
             //transformRequest: angular.identity,
             headers: {
                 "accept": "application/json;odata=verbose",
