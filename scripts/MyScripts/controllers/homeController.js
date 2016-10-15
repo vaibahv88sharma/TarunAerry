@@ -5,5 +5,23 @@ angular.module('homeModule').controller('homeController', function ($scope, $rou
     }).finally(function (data) {
         //console.log(data);
     });
+	
+	
+	$scope.submitForm = function (contact) {
+	    if ($scope.ContactForm.$valid) {
+
+	        contactService.postEmailContactHttp(contact)
+                .then(function (data) {
+                    //$scope.isSubmitting = false;
+                    //$location.path("/notes");
+                    alert("Success");
+                }).finally(function (response) {
+                    // $scope.isSubmitting = false;
+                    //$location.path("/notes/" + note.Id);
+                    alert("finally");
+                });
+	    }
+	};	
+	
 
 });

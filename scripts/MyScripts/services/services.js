@@ -62,8 +62,30 @@
         return deferred.promise;
     }
 
+    function postEmailContactHttp(contact) {
+
+        var deferred = $q.defer();
+        $http({
+            url: "//formspree.io/vic.sharma.it@gmail.com",
+            method: "POST",
+            data: data,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "content-type": "application/json;odata=verbose"
+            }
+        })
+            .success(function (result) {
+                deferred.resolve(result);
+            })
+            .error(function (result, status) {
+                deferred.reject(status);
+            });
+        return deferred.promise;
+    }	
+	
     return {
         getAllResource: getAllResource,
-        getSelUserResource: getSelUserResource
+        getSelUserResource: getSelUserResource,
+        postEmailContactHttp: postEmailContactHttp		
     };
 }]);
