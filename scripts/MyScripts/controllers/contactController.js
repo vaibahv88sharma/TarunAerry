@@ -15,11 +15,11 @@
                 .then(function (data) {
                     //$scope.isSubmitting = false;
                     //$location.path("/notes");
-                    alert("Success");
+                    //alert("Success");
                 }).finally(function (response) {
                     // $scope.isSubmitting = false;
                     //$location.path("/notes/" + note.Id);
-                    alert("finally");
+                    //alert("finally");
                 });;
 	        //ContactService.addContact(contact)
 	        //.success(function () {

@@ -14,11 +14,11 @@ angular.module('homeModule').controller('homeController', function ($scope, $rou
                 .then(function (data) {
                     //$scope.isSubmitting = false;
                     //$location.path("/notes");
-                    alert("Success");
+                    //alert("Success");
                 }).finally(function (response) {
                     // $scope.isSubmitting = false;
                     //$location.path("/notes/" + note.Id);
-                    alert("finally");
+                    //alert("finally");
                 });
 	    }
 	};	
