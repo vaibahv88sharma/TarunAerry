@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--<html lang="en" ng-app="homeModule">-->
 <html lang="en">
 <head>
@@ -18,8 +18,8 @@
 
     <script src="scripts/MyScripts/default/jquery.min.js"></script>
     <script src="scripts/MyScripts/default/angular.min.js"></script>
-    <script src="scripts/MyScripts/default/angular-route.min.js"></script>
-    <script src="scripts/MyScripts/default/angular-resource.min.js"></script>
+    <script src="scripts/MyScripts/default/angular-route.js"></script>
+    <script src="scripts/MyScripts/default/angular-resource.js"></script>
     <!--<script src="scripts/MyScripts/default/bootstrap.js"></script>-->
     <script src="scripts/MyScripts/default/bootstrap.min.js"></script>
     <script src="scripts/MyScripts/default/ui-bootstrap-tpls.min.js"></script>	
@@ -59,41 +59,52 @@
 
 </head>
 <body ng-app="homeModule">
-    
-    <div class="container-fluid" id="banner">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4" id="bannerIcon1">
+    <!--<nav class="navbar navbar-default navbar-static-top" id="navBar1">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand aLogo" href="#/home"><img class="iLogo" src="img/logo.png" alt="" /></a>
+            </div>
 
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4" id="bannerIcon2">
-                <!--<span><b>" Your Growth Our Success "</b></span>-->
-                <p>
-                    <span class="firstcharacter">Y</span>our
-                </p>
-                <p>
-                    <span>Growth</span>
-                </p>
-                <p>
-                    <span class="firstcharacter">O</span>ur
-                </p>
-                <p>
-                    <span>Success</span>
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4" id="bannerIcon3">
-                <ul class="social-network social-circle">
-                    <li><a href="https://www.facebook.com/aerrytax" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.facebook.com/aerrytax" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/aerrytax" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/home">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/taxation/5001">Taxation</a></li>
+                            <li><a href="#/taxation/5002">Business Structure <br>– Advice & Set up</a></li>
+                            <li><a href="#/taxation/5003">Accounting & Bookkeeping</a></li>
+                            <li><a href="#/taxation/5004">Payroll</a></li>
+                            <li><a href="#/taxation/5005">Planning & Valuation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/about">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.ato.gov.au/Calculators-and-tools/Host/?anchor=STC&anchor=STC#STC/questions">Tax Calculator</a></li>
+                            <li><a href="#/">Online Tax Return</a></li>
+                            <li><a href="#/">FAQ</a></li>
+                            <li><a href="https://www.ato.gov.au/General/Gen/Order-ATO-products-online/">Online Ordering</a></li>
+                            <li><a href="https://www.ato.gov.au/Forms/?sorttype=SortByTitle">ATO Forms</a></li>
+                            <li><a href="https://www.ato.gov.au/Individuals/Lodging-your-tax-return/Lodge-online/e-tax/">e-tax Essential</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>-->
 
-    <div id="navSection1">
-        <nav-page></nav-page>
-    </div>
-    <div id="contectSection1">
+    <nav-page></nav-page>
+
+    <div>
         <section>
             <div class="container-fluid homeContainer">
 
@@ -110,7 +121,7 @@
     <footer class="footer">
         <div class="container text-center">
             <!--<p class="text-muted">Place sticky footer content here.</p>-->
-            <small>Â© Copyright 2016, Aerry Tax & Accounting Pty Ltd</small>
+            <small>© Copyright 2016, Aerry Tax & Accounting Pty Ltd</small>
         </div>
 
         <a href="#" class="go-top"><i class="glyphicon glyphicon-arrow-up"></i></a>
