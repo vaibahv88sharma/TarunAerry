@@ -18,8 +18,8 @@
 
     <script src="scripts/MyScripts/default/jquery.min.js"></script>
     <script src="scripts/MyScripts/default/angular.min.js"></script>
-    <script src="scripts/MyScripts/default/angular-route.js"></script>
-    <script src="scripts/MyScripts/default/angular-resource.js"></script>
+    <script src="scripts/MyScripts/default/angular-route.min.js"></script>
+    <script src="scripts/MyScripts/default/angular-resource.min.js"></script>
     <!--<script src="scripts/MyScripts/default/bootstrap.js"></script>-->
     <script src="scripts/MyScripts/default/bootstrap.min.js"></script>
     <script src="scripts/MyScripts/default/ui-bootstrap-tpls.min.js"></script>	
@@ -59,6 +59,37 @@
 
 </head>
 <body ng-app="homeModule">
+    
+    <div class="container-fluid" id="banner">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4" id="bannerIcon1">
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4" id="bannerIcon2">
+                <!--<span><b>" Your Growth Our Success "</b></span>-->
+                <p>
+                    <span class="firstcharacter">Y</span>our
+                </p>
+                <p>
+                    <span>Growth</span>
+                </p>
+                <p>
+                    <span class="firstcharacter">O</span>ur
+                </p>
+                <p>
+                    <span>Success</span>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4" id="bannerIcon3">
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/aerrytax" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/aerrytax" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/aerrytax" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!--<nav class="navbar navbar-default navbar-static-top" id="navBar1">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -102,9 +133,11 @@
         </div>
     </nav>-->
 
-    <nav-page></nav-page>
 
-    <div>
+    <div id="navSection1">
+        <nav-page></nav-page>
+    </div>
+    <div id="contectSection1">
         <section>
             <div class="container-fluid homeContainer">
 
