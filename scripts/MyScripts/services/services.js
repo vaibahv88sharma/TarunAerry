@@ -66,7 +66,7 @@
 
         var deferred = $q.defer();
         $http({
-            url: "//formspree.io/vic.sharma.it@gmail.com",
+            url: "//formspree.io/info@ataccounting.com.au",
             method: "POST",
             data: contact,
             headers: {
