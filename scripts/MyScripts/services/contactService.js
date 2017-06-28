@@ -103,7 +103,9 @@
             //////////'Access-Control-Allow-Origin': '*',
             //////////'Access-Control-Allow-Headers': 'X-Requested-With'
             //////////}
-            url: "//formspree.io/vic.sharma.it@gmail.com",
+            //url: "//formspree.io/vic.sharma.it@gmail.com",
+            url: "//formspree.io/info@ataccounting.com.au",
+			
             method: "POST",
             //processData: false,
             data: contact,//JSON.stringify(data),
