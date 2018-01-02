@@ -1,4 +1,4 @@
-﻿<!-- <div class="row">
+﻿<div class="row">
     <h1>{{title1}}</h1>
     <br />
     <p>{{description1}}</p>
@@ -8,57 +8,4 @@
     </blockquote>
     <br />
     <p>{{description2}}</p>
-</div> -->
-
-
-<div class="row">
-   
-        <div class="col-xs-12 col-sm-6 md-6 lg-6">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 md-12 lg-12">
-                    <h1>{{title1}}</h1>
-                </div>
-                <div class="col-xs-12 col-sm-12 md-12 lg-12">
-                    <p>{{description1}}</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 md-12 lg-12">
-                    <blockquote>
-                        <p>Whether you’ve got a basic tax return with a single group certificate, or you’re at the other end of the scale with rental properties and complex investments… we can help you get it sorted, fast!</p>
-                    </blockquote>
-                </div>
-                <div class="col-xs-12 col-sm-12 md-12 lg-12">
-                    <p>{{description2}}</p>
-                </div>
-            </div>
-        </div>   
-    
-        <div class="col-xs-12 col-sm-6 md-6 lg-6">
-            <div class="" style="background-color:#3498db; padding: 0.5em 0em;">
-                
-                    <h1 style="color: white; text-align:center">{{servicesListH1}}</h1>
-                    <h4 style="color: white; text-align:center">{{servicesListH2}}</h4>
-                
-            </div>
-            <div style="text-align: center;">
-                <span style="font-size:2.5em;">$</span><span style="font-size:4em;">{{selectedOption()}}</span><span style="font-size:2.5em;">.00</span>
-            </div>
-            <div class="">
-                <label ng-repeat="checkbx in servicesList"
-                    style="display: block; font-size: 1em; text-align: left;">
-                    <input type="checkbox" name="itemProvided"
-                       ng-init="checkbx.selected = checkbx.selected == 1"
-                        data-ng-model="checkbx.selected"
-                        style="transform: scale(1.5);">
-                    &nbsp;&nbsp;{{checkbx.title}}
-                </label>           
-            </div>
-            <div style=" display: flex; justify-content: center; margin: 20px;">
-                <button class="btn btn-success" type="submit" 
-                    style=" background-color:#3498db; padding: 5px 0.5em 2px 0.5em; font-size: 2em;"
-                    onclick="document.location.href='#/contact';">
-                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;Contact
-                </button>
-            </div>
-    
-        </div>
-    </div>
+</div>
