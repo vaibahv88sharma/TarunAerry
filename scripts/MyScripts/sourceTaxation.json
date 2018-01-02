@@ -19,13 +19,45 @@
         "id": "5001",
         "title": "Accounting",
         "description1": "We are proud to have highly qualified accountants who are attending regular trainings to keep up and maintain the accounting standards of the firm. Aerry Tax & Accounitng offers a wide range of accounting services and if you would like to know more please talk to one of our accountants.",
-        "description2": "Bookkeeping is done by using MYOB, XERO or Quickbooks. Let us know how often you need your books done and we will arrange it for you. If you would like to do bookkeeping on site, one of our assistant accountants will come to your office and do the work."
+        "description2": "Bookkeeping is done by using MYOB, XERO or Quickbooks. Let us know how often you need your books done and we will arrange it for you. If you would like to do bookkeeping on site, one of our assistant accountants will come to your office and do the work.",
+        "servicesListH1": "Accounting",
+        "servicesListH2": "For people with employment income and deductions",
+        "servicesList": [
+          {
+            "id": "101",
+            "title": "Salary & Wage Income",
+            "cost": "40",
+            "selected":  "false"
+          },
+          {
+            "id": "102",
+            "title": " Centrelink and Government Payments (if applicable)",
+            "cost": "80",
+            "selected":  "true"
+          }
+        ]  
       },
       {
         "id": "5002",
         "title": "Taxation",
         "description1": "We understand there are many things you would rather be doing than your tax return.",
-        "description2": "Our highly qualified staff in Aerry Tax & Accounting are capable of handling any kind of a return from a simple tax return to very complex returns. They have in depth knowledge in different types of returns so that you will not miss out a single dollar that you are entitled to."
+        "description2": "Our highly qualified staff in Aerry Tax & Accounting are capable of handling any kind of a return from a simple tax return to very complex returns. They have in depth knowledge in different types of returns so that you will not miss out a single dollar that you are entitled to.",
+        "servicesListH1": "Taxation",
+        "servicesListH2": "For people with employment income and deductions",
+        "servicesList": [
+          {
+            "id": "101",
+            "title": "Salary & Wage Income",
+            "cost": "40",
+            "selected":  "0"
+          },
+          {
+            "id": "102",
+            "title": " Centrelink and Government Payments (if applicable)",
+            "cost":  "80",
+            "selected":  "1"
+          }
+        ] 
       },
       {
         "id": "5003",
@@ -37,7 +69,23 @@
         "id": "5004",
         "title": "Business Services",
         "description1": "We understand there are many things you would rather be doing than your tax return.",
-        "description2": "Our highly qualified staff in Aerry Tax & Accounting are capable of handling any kind of a return from a simple tax return to very complex returns. They have in depth knowledge in different types of returns so that you will not miss out a single dollar that you are entitled to."
+        "description2": "Our highly qualified staff in Aerry Tax & Accounting are capable of handling any kind of a return from a simple tax return to very complex returns. They have in depth knowledge in different types of returns so that you will not miss out a single dollar that you are entitled to.",
+        "servicesListH1": "Business Services",
+        "servicesListH2": "For people with employment income and deductions",
+        "servicesList": [
+          {
+            "id": "101",
+            "title": "Salary & Wage Income",
+            "cost": "40",
+            "selected":  "false"
+          },
+          {
+            "id": "102",
+            "title": " Centrelink and Government Payments (if applicable)",
+            "cost":  "80",
+            "selected":  "true"
+          }
+        ] 
       },
       {
         "id": "5005",

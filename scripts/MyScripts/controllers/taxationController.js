@@ -15,6 +15,9 @@ angular.module('homeModule').controller('taxationController', function ($scope, 
                     $scope.description1 = value.description1;
                     $scope.description2 = value.description2;
                     $scope.title1 = value.title;
+                    $scope.servicesList = value.servicesList;
+                    $scope.servicesListH1 = value.servicesListH1;
+                    $scope.servicesListH2 = value.servicesListH2;                    
                     keepGoing = false;
                 }
                 else {
@@ -26,8 +29,18 @@ angular.module('homeModule').controller('taxationController', function ($scope, 
         });
     }).finally(function (data) {
         //console.log($scope.description1);
-        //console.log($scope.description2);
-        //console.log($scope.title1);
     });
+
+    $scope.selectedOption = function () {
+        if ((filterFilter($scope.servicesList, { selected: 1 })) || (filterFilter($scope.servicesList, { selected: true }))) {
+            var sum = "";
+            angular.forEach($scope.servicesList, function (value, key) {
+                if ((value.selected == 1) || (value.selected == true)) {
+                    sum = parseInt(sum =="" ? 0 : sum) + parseInt(value.cost);
+                }
+            });
+            return (sum == "" ? 0 : sum);
+        }
+    }
 
 });
